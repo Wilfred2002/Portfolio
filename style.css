@@ -97,7 +97,7 @@ body.dark-mode nav ul li a:hover {
 
 body.dark-mode section h2 {
     background-color: #222;
-    color: #f0cb35; /* Accent color for headings in dark mode */
+    color: #ddd; /* Accent color for headings in dark mode */
 }
 
 /* Theme Toggle Button Styles */
