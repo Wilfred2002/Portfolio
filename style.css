@@ -1,65 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    margin: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-#skills, #experience, #education, #projects {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 0;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
 /* Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: background-color 0.3s, color 0.3s;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 header {
@@ -69,14 +16,21 @@ header {
     padding: 1em 0;
 }
 
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -90,7 +44,9 @@ nav ul li a:hover {
 }
 
 main {
-    margin: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 10px;
 }
 
 section {
@@ -102,6 +58,7 @@ section h2 {
     color: white;
     padding: 10px;
     margin-top: 0;
+    border-radius: 5px;
 }
 
 ul {
@@ -115,7 +72,7 @@ li {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #333;
     color: white;
 }
@@ -139,6 +96,7 @@ body.dark-mode section h2 {
     background-color: #222;
 }
 
+/* Theme Toggle Button Styles */
 .theme-toggle-container {
     position: absolute;
     top: 10px;
@@ -157,4 +115,17 @@ body.dark-mode section h2 {
 
 #theme-toggle:hover {
     background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .theme-toggle-container {
+        top: 15px;
+        right: 15px;
+    }
 }
