@@ -34,3 +34,22 @@ footer {
     background-color: #333;
     color: white;
 }
+#skills, #experience, #education, #projects {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
