@@ -83,6 +83,15 @@ body.dark-mode {
     color: #ddd; /* Lighter text color for better contrast */
 }
 
+body.dark-mode a {
+    color: #f0cb35; /* This is a shade of yellow */
+}
+
+/* Optional: Style for hyperlinks on hover in dark mode */
+body.dark-mode a:hover {
+    color: #ffd700; /* This can be a slightly different shade of yellow for hover effect */
+}
+
 body.dark-mode header, body.dark-mode footer {
     background-color: #1a1a1a;
 }
@@ -96,7 +105,7 @@ body.dark-mode nav ul li a:hover {
 }
 
 body.dark-mode section h2 {
-    background-color: #222;
+    background-color: rgb(44, 44, 44)a1a;
     color: #f0cb35; /* Accent color for headings */
 }
 

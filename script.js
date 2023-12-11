@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typewriter effect
     const typewriterElement = document.getElementById("typewriter");
     if (typewriterElement) {
-        const typewriterText = "Welcome to My Portfolio!";
+        const typewriterText = "My name is Wilfred Naraga, welcome to my online resume in website format built using HTML, CSS, and Javascript.";
         let i = 0;
         const speed = 100;
         const typewriter = () => {
