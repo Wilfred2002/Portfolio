@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ddd;
+    color: #f0cb35; /* Accent color */
 }
 
 main {
@@ -80,20 +80,24 @@ footer {
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #262626;
-    color: white;
+    color: #ddd; /* Lighter text color for better contrast */
 }
 
-body.dark-mode header, body.dark-mode nav ul li a, body.dark-mode footer {
+body.dark-mode header, body.dark-mode footer {
     background-color: #1a1a1a;
-    color: white;
 }
 
 body.dark-mode nav ul li a {
     color: #bbb;
 }
 
+body.dark-mode nav ul li a:hover {
+    color: #f0cb35; /* Accent color */
+}
+
 body.dark-mode section h2 {
     background-color: #222;
+    color: #f0cb35; /* Accent color for headings */
 }
 
 /* Theme Toggle Button Styles */
@@ -128,4 +132,24 @@ body.dark-mode section h2 {
         top: 15px;
         right: 15px;
     }
+}
+
+#scrollToTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #333; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
 }
