@@ -43,3 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.scrollTop = 0;
     });
 });
+
+// Smooth scrolling for navigation links and top button
+document.querySelectorAll('a[href^="#"], #scrollToTopBtn').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        let target = document.querySelector(this.getAttribute('href')) || document.body;
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

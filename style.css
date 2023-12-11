@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -80,16 +80,7 @@ footer {
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #262626;
-    color: #ddd; /* Lighter text color for better contrast */
-}
-
-body.dark-mode a {
-    color: #f0cb35; /* This is a shade of yellow */
-}
-
-/* Optional: Style for hyperlinks on hover in dark mode */
-body.dark-mode a:hover {
-    color: #ffd700; /* This can be a slightly different shade of yellow for hover effect */
+    color: #ddd;
 }
 
 body.dark-mode header, body.dark-mode footer {
@@ -97,16 +88,16 @@ body.dark-mode header, body.dark-mode footer {
 }
 
 body.dark-mode nav ul li a {
-    color: #bbb;
+    color: #f0cb35; /* Yellow color for hyperlinks in dark mode */
 }
 
 body.dark-mode nav ul li a:hover {
-    color: #f0cb35; /* Accent color */
+    color: #ffd700; /* Different shade of yellow for hover effect in dark mode */
 }
 
 body.dark-mode section h2 {
-    background-color: rgb(44, 44, 44)a1a;
-    color: #f0cb35; /* Accent color for headings */
+    background-color: #222;
+    color: #f0cb35; /* Accent color for headings in dark mode */
 }
 
 /* Theme Toggle Button Styles */
@@ -143,6 +134,7 @@ body.dark-mode section h2 {
     }
 }
 
+/* Scroll-to-Top Button */
 #scrollToTopBtn {
     display: none; 
     position: fixed; 
