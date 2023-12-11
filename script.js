@@ -12,3 +12,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleButton = document.createElement('button');
+    themeToggleButton.textContent = 'Toggle Dark/Light Mode';
+    document.body.insertBefore(themeToggleButton, document.body.firstChild);
+
+    themeToggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+});
